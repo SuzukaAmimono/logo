@@ -10,15 +10,15 @@ var svg = builder.create('svg', {headless:true})
 
 // fonts
 var ipaexmin = "IPAexMincho";
-var honomin  = "Honoka-Mincho";
-var honogo   = "Honoka-Maru-Gothic";
+var honomin  = "Honoka Mincho";
+var honogo   = "Honoka Maru Gothic";
 var notol    = "NotoSansCJKjp-Light";
 var notor    = "NotoSansCJKjp-Regular";
 var notodl   = "NotoSansCJKjp-DemiLight";
 var notot    = "NotoSansCJKjp-Thin";
-var kokumin  = "Koku-Mincho-Regular";
+var kokumin  = "Koku Mincho Regular"; // Koku-Mincho-Regular";
 
-var font = kokumin;
+var font = kokumin; 
 
 // text strings
 var suzuka_amimono = "鈴鹿編物";
@@ -31,7 +31,7 @@ var text_suzuka_amimono = {
         '@y':'70px',
         '@font-family': font,
         '@font-size':'90px',
-        '@font-weight':'bold',
+//        '@font-weight':'bold',
         '@textLength':'400px',
         '@text-anchor':'middle',
         '@dominant-baseline':'middle',
@@ -83,3 +83,4 @@ svg.end({pretty:true});
 fs.writeFile('out/logo.svg', svg, function(err){
     console.log(err);
 });
+
