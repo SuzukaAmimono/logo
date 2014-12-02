@@ -6,7 +6,9 @@
   "dependencies": {
     "xmlbuilder": "^2.4.5"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp": "^3.8.10"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
