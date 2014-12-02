@@ -9,15 +9,21 @@ var svg = builder.create('svg', {headless:true})
 // create objects
 
 // fonts
-var hiramin = "HiraMinProN-W6",
-    ipaexmin = "IPAexMincho",
-    cochin = "Cochin";
+var ipaexmin = "IPAexMincho";
+var honomin  = "Honoka-Mincho";
+var honogo   = "Honoka-Maru-Gothic";
+var notol    = "NotoSansCJKjp-Light";
+var notor    = "NotoSansCJKjp-Regular";
+var notodl   = "NotoSansCJKjp-DemiLight";
+var notot    = "NotoSansCJKjp-Thin";
+var kokumin  = "Koku-Mincho-Regular";
 
-var font = hiramin;
+var font = kokumin;
 
 // text strings
-var suzuka_amimono = "鈴鹿編物",
-    since = "since 1985";
+var suzuka_amimono = "鈴鹿編物";
+var since_en = "since 1989";
+
 
 var text_suzuka_amimono = {
     text: {
@@ -52,9 +58,8 @@ var text_since = {
         '@font-weight':'bold',
         '@text-anchor':'middle',
         '@fill': 'rgb(255,255,255)',
-        '#text':since
+        '#text':since_en
     }};
-
 
 var bg_since = {
     rect: {
